@@ -1,0 +1,139 @@
+.MovieCard {
+  position: relative;
+}
+.star {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+}
+.star i {
+  color: #ff0;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.88s;
+}
+.fav {
+  padding: 10px;
+  font-size: 25px;
+  color: slateblue;
+}
+/* .card-body {
+  position: absolute;
+} */
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .card {
+  position: relative;
+  display: flex;
+  height: 330px;
+  width: 300px;
+  background-color: #191c29 !important;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid rgb(88 199 250);
+  overflow: hidden;
+  transition: 0.6s;
+  box-shadow: 0px 0px 100px rgba(88, 199, 250, 0.15);
+}
+.main .text1 {
+  position: relative;
+  font-size: 33px;
+  font-family: roboto;
+  color: rgb(88 199 250);
+  font-weight: 100;
+  letter-spacing: 1px;
+  transition: 0.7s;
+  transform: translateY(110px);
+}
+.main .card:hover .text1 {
+  transform: translateY(-150px);
+  opacity: 0;
+}
+.main .text2 {
+  color: #dbf9ff;
+  font-family: roboto;
+  font-weight: 100;
+  font-size: 14px;
+  width: 170px;
+  line-height: 25px;
+  transform: translateY(200px);
+  transition: 0.7s;
+  opacity: 0;
+}
+/* .hover {
+} */
+.main h2 {
+  font-size: 30px;
+  font-family: roboto;
+  /* color: rgb(88 199 250); */
+  color: white;
+  background-color: #48a9fe;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 10px;
+  transform: translateY(200px);
+  opacity: 1;
+  transition: 0.6s;
+  opacity: 0;
+  border-radius: 5px;
+}
+.main button {
+  transform: translatey(200px);
+  transition: 0.88s;
+  opacity: 0;
+  width: 110px;
+  height: 38px;
+  border-radius: 40px;
+  font-size: 12px;
+  font-family: roboto;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #0beef9;
+  background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
+  border: none;
+  cursor: pointer;
+}
+
+.card:hover .hover {
+  display: block;
+}
+.card:hover h2 {
+  transform: translatey(-38px);
+  opacity: 1;
+}
+.card:hover .text2 {
+  transform: translatey(-20px);
+  opacity: 1;
+}
+.card:hover button {
+  transform: translatey(5px);
+  opacity: 1;
+}
+.card:hover {
+  transform: scale(110%);
+  box-shadow: 0px 0px 100px rgb(88 199 250);
+}
+.card:hover i {
+  transform: scale(120%);
+  /* box-shadow: 0px 0px 100px rgb(88 199 250); */
+}
+
+button:active {
+  color: #0beef9;
+}
+/* .custom {
+  background-color: #000;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+} */
